@@ -11,7 +11,7 @@ body,
 
 body {
   margin: 0;
-  background: #fff;
+  background: linear-gradient(135deg, #f5f8fc 0%, #eef3f8 100%);
   color: #212529;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -29,49 +29,52 @@ body {
 .cards-container {
   max-width: 992px;
   margin: 0 auto;
-  padding: 24px 0 0;
+  padding: 48px 16px;
 }
 
 .cards-container .row {
-  --bs-gutter-x: 16px;
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 20px;
 }
 
 .card {
-  min-height: 128px;
-  border: 1px solid #cfd4da !important;
-  border-radius: 5px !important;
+  min-height: 180px;
+  height: 100%;
+  border: 1px solid #dfe5ec !important;
+  border-radius: 12px !important;
   background: #fff;
-  box-shadow: none;
+  box-shadow: 0 8px 24px rgba(37, 55, 79, 0.08);
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
 .card:hover {
-  transform: none;
-  box-shadow: none;
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(37, 55, 79, 0.14);
 }
 
 .card-body {
-  padding: 10px 11px 12px;
+  padding: 24px;
 }
 
 .card-title {
-  margin: 0;
-  padding: 0 0 9px;
-  border-bottom: 1px solid #d9dde1;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e9eef4;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 21px;
-  line-height: 1.2;
-  font-weight: 400;
+  line-height: 1.25;
+  font-weight: 700;
   letter-spacing: normal;
-  color: #000;
+  color: #1f2937;
 }
 
 .card-text {
   margin: 0;
-  padding-top: 9px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 1.55;
-  color: #555;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5f6b7a;
 }
 
 :root {

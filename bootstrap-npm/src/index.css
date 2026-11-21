@@ -26,18 +26,15 @@
 
 body {
   margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  text-align: left;
 }
 
 h1,
@@ -80,4 +77,16 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.card-title {
+  margin: 0 0 12px;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
 }
